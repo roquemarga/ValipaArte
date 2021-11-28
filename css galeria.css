@@ -1,0 +1,27 @@
+
+    .container-galeria {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 150px;
+        padding: 20px;
+        grid-gap: 10px;
+    }
+
+    .galeria__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2%;
+    }
+
+    .galeria__item:nth-child(1) {
+        grid-row-start: span 2;
+    }
+
+    .galeria__item:nth-child(6) {
+        grid-column-start: span 2;
+    }
+
+    .galeria__item:nth-child(8) {
+        grid-row-start: span 2;
+    }

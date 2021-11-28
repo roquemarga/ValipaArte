@@ -1,0 +1,25 @@
+nav {
+    height: 6.25rem;
+    width: $full-width;
+    background-color: $transparent !important;
+    
+    .navbar__estilos {
+        font-family: $f-family-var;
+        font-size: $f-s-sm;
+    }
+
+    .navbar__estilos--logo {
+        font-style: bold;
+        color: #ffdb70;
+        text-shadow: 2px 2px black;
+        font-size: 30px;
+    }
+
+    .navbar-collapse {
+        flex-grow: 0;
+    }
+
+    input > .form-control me-2 {
+        margin: 7px;
+    }
+}

@@ -1,0 +1,72 @@
+
+
+footer {
+    height: 14.25rem;
+    width: $full-width;
+    background-color: $transparent;
+    margin-top: 18.25rem;
+
+    .info__suscrip {
+        padding-left: $f-s-md;
+        margin-bottom: 30px;
+    }    
+
+    .fuente-footer {
+        font-family: 'Enyo-Slab_Regular';
+        font-weight: 650;
+        font-size: 25px;
+        letter-spacing: 3px;
+    } 
+
+    .fuente-footer--correo {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    .correo-footer {
+        margin-top: 10px;
+        width: 18.75rem;
+    }
+
+    .redes-footer {
+        margin-top: 10px;
+    }
+
+    .redes-footer--botones {
+        margin-left: 28px;
+    }
+
+    .copy-footer {
+        margin-top: 90px;
+        margin-left: $f-s-md;
+    }
+
+    .btn {
+        width: $f-s-md;
+        background-color: #6C784B;
+    }
+
+    .btn-enviar {
+        width: 4.25rem;
+        background-color: #6C784B;
+        color: #fcedd8;
+        border-radius: 5px;
+        font-style: none;
+        margin-top: 47px;
+        font-family: $f-family-var6;
+        height: 2.3rem;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .bg-1{
+        background: #ffdb70;
+        height: $full-height;
+        padding-top: $f-s-md;
+        width: $full-width;
+    }
+
+
+}

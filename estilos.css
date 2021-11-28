@@ -1,0 +1,447 @@
+main .container-fluid__presentacion {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px;
+}
+
+main .container-fluid__presentacion .background-image {
+  background-image: url("img/lic.jpg");
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main .container-fluid__presentacion .background-image::before {
+  content: '';
+  background-image: url("img/lic.jpg");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+main .container-fluid__presentacion .presentacion__palabras {
+  color: #ffdb70;
+  font-weight: normal;
+  font-size: 60px;
+  font-family: "Unica One", cursive;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  text-shadow: 2px 2px black;
+}
+
+main .container-fluid__presentacion .presentacion__palabras--arte {
+  font-size: 40px;
+  position: relative;
+}
+
+main .inspirate__img {
+  background-image: url("img/flores1.jpg");
+  background-size: cover;
+  position: relative;
+  height: 12.5rem;
+  width: 100%;
+}
+
+main .inspirate__img .inspirate__text {
+  background-color: white;
+  color: black;
+  font-size: 5vw;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+  font-family: "Sarabun", sans-serif;
+}
+
+main .inspirate__img--colec {
+  height: 10.5rem;
+}
+
+main .inspirate__text--colec {
+  font-size: 3vw !important;
+}
+
+main .inspirate__img--origen {
+  height: 7.5rem;
+}
+
+main .container-galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 150px;
+  padding: 20px;
+  grid-gap: 10px;
+}
+
+main .galeria__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2%;
+}
+
+main .galeria__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+main .galeria__item:nth-child(1) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+main .galeria__item:nth-child(6) {
+  -ms-grid-column: span 2;
+      grid-column-start: span 2;
+}
+
+main .galeria__item:nth-child(8) {
+  -ms-grid-row: span 2;
+      grid-row-start: span 2;
+}
+
+main .galeria__imagenes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .galeria__imagenes .imagenes__muestras {
+  width: 100%;
+  height: 15.375rem !important;
+  margin: 10px;
+}
+
+main .galeria__imagenes .imagenes__muestras:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+main .galeria__imagenes--muestras {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+main .boton__porfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .btn {
+  font-family: "Unica One", cursive;
+  background-color: #ffdb70;
+  margin-top: 30px;
+}
+
+main .card {
+  position: relative;
+  overflow: hidden;
+  max-height: 600px;
+}
+
+main .card .cardText {
+  font-family: "Unica One", cursive;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffc823;
+  text-shadow: 2px 2px black;
+}
+
+main .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+main .card:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+}
+
+main .fondos-texto {
+  border-radius: 5px;
+  margin-top: 100px;
+  margin-left: 40px;
+  font-family: "Unica One", cursive;
+  font-size: 18px;
+  border-color: #ffcb2f;
+  border-left-style: solid;
+  border-width: 15px;
+  color: #ffdb70;
+  text-shadow: black 2px 2px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+main .img-grande {
+  height: 210px;
+  width: 150px !important;
+  border-radius: 34px;
+  margin-top: 100px;
+  margin-left: 71px;
+}
+
+main .img-mediana {
+  height: 210px;
+  width: 210px;
+  border-radius: 24px;
+  margin-top: 100px;
+  display: inline;
+  margin-left: 40px;
+}
+
+main .fondos-texto--derecha {
+  border-left-style: none;
+  border-right-style: solid;
+  text-align: right;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+  float: right;
+  display: inline;
+  clear: both;
+  letter-spacing: 2px;
+}
+
+main .porfolio__card {
+  position: relative;
+  float: left;
+  width: 320px;
+  height: 380px;
+  overflow: hidden;
+  margin: 0 15px 15px 0;
+}
+
+main .porfolio__texto {
+  display: none;
+  position: absolute;
+  bottom: 186px;
+  left: 82px;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000);
+  width: 151px;
+  color: #ffdb70;
+  text-shadow: black 2px 2px;
+  padding: 10px;
+  font-family: "Sarabun", sans-serif;
+  cursor: pointer;
+  border-radius: 24px;
+}
+
+main .porfolio__card:hover .porfolio__texto {
+  display: block;
+}
+
+main .porfolio__titulos {
+  font-family: "Sarabun", sans-serif;
+  font-size: 40px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+main .porfolio__imagenes {
+  border-radius: 24px;
+  width: 300px;
+  height: 320px;
+  margin: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+main .porfolio__imagenes:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(0.4);
+          filter: brightness(0.4);
+}
+
+@media (min-width: 576px) {
+  main .col-sm-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 17%;
+            flex: 0 0 17%;
+    max-width: 25%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Arima Madurai", cursive;
+}
+
+@font-face {
+  font-family: 'Enyo-Slab_Light';
+  src: url("fuentes/Enyo-Slab_Light.ttf"), url("fuentes/Enyo-Slab_Light.woff") format("woff"), url("fuentes/Enyo-Slab_Light.otf") format("opentype"), url("fuentes/Enyo-Slab_Light.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'Enyo-Slab_Regular';
+  src: url("fuentes/Enyo-Slab_Regular.ttf"), url("fuentes/Enyo-Slab_Regular.woff") format("woff"), url("fuentes/Enyo-Slab_Regular.otf") format("opentype"), url("fuentes/Enyo-Slab_Regular.svg") format("svg");
+}
+
+.fondoGeneral {
+  background-image: url("img/fondo10.png");
+  background-repeat: repeat;
+}
+
+nav {
+  height: 6.25rem;
+  width: 100%;
+  background-color: transparent !important;
+}
+
+nav .navbar__estilos {
+  font-family: "Unica One", cursive;
+  font-size: 20px;
+}
+
+nav .navbar__estilos--logo {
+  font-style: bold;
+  color: #ffdb70;
+  text-shadow: 2px 2px black;
+  font-size: 30px;
+}
+
+nav .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+nav input > .form-control me-2 {
+  margin: 7px;
+}
+
+footer {
+  height: 14.25rem;
+  width: 100%;
+  background-color: transparent;
+  margin-top: 18.25rem;
+}
+
+footer .info__suscrip {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
+footer .fuente-footer {
+  font-family: 'Enyo-Slab_Regular';
+  font-weight: 650;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+footer .fuente-footer--correo {
+  font-size: 21px;
+  text-align: center;
+}
+
+footer .correo-footer {
+  margin-top: 10px;
+  width: 18.75rem;
+}
+
+footer .redes-footer {
+  margin-top: 10px;
+}
+
+footer .redes-footer--botones {
+  margin-left: 28px;
+}
+
+footer .copy-footer {
+  margin-top: 90px;
+  margin-left: 40px;
+}
+
+footer .btn {
+  width: 40px;
+  background-color: #6C784B;
+}
+
+footer .btn-enviar {
+  width: 4.25rem;
+  background-color: #6C784B;
+  color: #fcedd8;
+  border-radius: 5px;
+  font-style: none;
+  margin-top: 47px;
+  font-family: "Enyo-Slab_Light";
+  height: 2.3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+footer .bg-1 {
+  background: #ffdb70;
+  height: 100vh;
+  padding-top: 40px;
+  width: 100%;
+}
+/*# sourceMappingURL=estilos.css.map */

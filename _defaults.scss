@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $f-family-base;
+}
+
+@font-face {
+    font-family: 'Enyo-Slab_Light';
+    src: 
+    url('fuentes/Enyo-Slab_Light.ttf'),
+    url('fuentes/Enyo-Slab_Light.woff') format('woff'),
+    url('fuentes/Enyo-Slab_Light.otf') format('opentype'),
+    url('fuentes/Enyo-Slab_Light.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Enyo-Slab_Regular';
+    src: 
+    url('fuentes/Enyo-Slab_Regular.ttf'),
+    url('fuentes/Enyo-Slab_Regular.woff') format('woff'),
+    url('fuentes/Enyo-Slab_Regular.otf') format('opentype'),
+    url('fuentes/Enyo-Slab_Regular.svg') format('svg');
+}
+
+
+.fondoGeneral {
+    background-image: url("img/fondo10.png");
+    background-repeat: repeat;
+}
